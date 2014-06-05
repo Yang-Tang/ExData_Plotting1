@@ -28,5 +28,5 @@ data <- read.table('household_power_consumption.txt', head = F, sep = ";", na.st
 names(data) <- name
 
 png('plot1.png', 480, 480)
-hist(data1$Global_active_power, main='Global Active Power', xlab = 'Global Active Power(kilowatts)', col = 'red')
+hist(data$Global_active_power, main='Global Active Power', xlab = 'Global Active Power(kilowatts)', col = 'red')
 dev.off()
